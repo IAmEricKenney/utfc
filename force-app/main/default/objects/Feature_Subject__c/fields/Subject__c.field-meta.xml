@@ -3,6 +3,15 @@
     <fullName>Subject__c</fullName>
     <externalId>false</externalId>
     <label>Subject</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Subject__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Feature</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>Subject__c</referenceTo>
     <relationshipLabel>Feature Subjects</relationshipLabel>
     <relationshipName>Feature_Subjects</relationshipName>
